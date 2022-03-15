@@ -10,6 +10,35 @@
     <!-- Local CSS Style Sheet -->
     <link rel="stylesheet" href="./assets/css/style.css">
 <body>
+    <header>Weather Dashboard</header>
+    <main class="flex-row justify-space-between">
+        <div class="col-12 col-md-4">
+            <div class="card">
+                <h3 class="card-header text-uppercase">Search for a City:</h3>
+                <form id="user-form" class="card-body">
+                    <label class="form-label" for="cityName">City Name</label>
+                    <input name="cityName" id="cityName" type="text" autofocus="true" class="form-input" />
+                    <button type="submit" class="btn">Search</button>
+                </form>
+            </div>
+            <div class="card">
+                <div class="card-body" id="popular-cities">
+                    <button class="btn" data-language="Austin">Austin</button>
+                    <button class="btn" data-language="Chicago">Chicago</button>
+                    <button class="btn" data-language="New York">New York</button>
+                    <button class="btn" data-language="Orlando">Orlando</button>
+                    <button class="btn" data-language="San Francisco">San Francisco</button>
+                    <button class="btn" data-language="Seattle">Seattle</button>
+                    <button class="btn" data-language="Denver">Denver</button>
+                    <button class="btn" data-language="Atlanta">Atlanta</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8">
+            <h2 class="subtitle">Showing Repositories for: <span id="repo-search-term"></span></h2>
+            <div id="repos-container" class="list-group"></div>
+        </div>
+    </main>
     <!-- Jquery CDN -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <!-- local js script -->
