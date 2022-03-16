@@ -9,6 +9,7 @@
 
 * {
     box-sizing: border-box;
+    color: var(--primary);
 }
 
 header {
@@ -49,6 +50,14 @@ main {
 
 p {
     font-size: 1.2rem;
+}
+
+span {
+    color: var(--primary);
+}
+
+input {
+    color: var(--secondary);
 }
 
 .btn {
@@ -124,6 +133,7 @@ p {
 .list-group {
     padding: 0;
     list-style: none;
+    color: var(--primary);
 }
 
 .list-item {
